@@ -6,7 +6,7 @@ from langchain.agents import initialize_agent, AgentType
 from langchain.callbacks import StreamlitCallbackHandler
 
 # Load API key from Streamlit secrets
-api_key = st.secrets["groq"]["api_key"]
+api_key = st.secrets["GROQ_API_KEY"]
 
 # Arxiv and Wikipedia Tools
 arxiv_wrapper = ArxivAPIWrapper(top_k_results=1, doc_content_chars_max=200)
